@@ -1,1 +1,5 @@
-<p>cart works!</p>
+<h3>Cart</h3>
+<div class="cart-item" *nfFor="let product of items">
+  <span>{{ product.name }}</span>
+  <span>{{ product.price | currency }}</span>
+</div>
